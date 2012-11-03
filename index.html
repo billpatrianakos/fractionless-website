@@ -59,15 +59,18 @@
 				<article class="one centered-text">
 					<h5>Who uses Fraction.less?</h5>
 					<p>
-					<a href="http://chooseclever.com">
-						<img class="users" src="img/clever.png" alt="Clever Web Design uses Fraction.less" />
-					</a> 
-					<a href="http://writeapp.me">
-						<img src="img/writeapp.png" class="users" alt="Write.app uses Fraction.less" />
-					</a> 
-					<a href="http://cloudthing.me">
-						<img class="users" src="img/cloudthing.png" alt="CloudThing uses Fraction.less" />
-					</a>
+						<a href="http://asapquotes.com/winterleads/a/" target="_blank">
+							<img class="users" src="img/examples/asap.png" alt="ASAP Quotes uses Fraction.less" />
+						</a>
+						<a href="http://norvaxuniversity.com" target="_blank">
+							<img class="users" src="img/examples/nvxu.png" alt="Norvax University uses Fraction.less" />
+						</a>
+						<a href="http://writeapp.me" target="_blank">
+							<img src="img/examples/write.png" class="users" alt="Write.app uses Fraction.less" />
+						</a> 
+						<a href="http://bpo.gohealth.com" target="_blank">
+							<img class="users" src="img/examples/gh.png" alt="GoHealth uses Fraction.less" />
+						</a>
 					</p>
 				</article>
 			</section>
@@ -146,7 +149,7 @@
 				<article class="one-quarter">
 					<h3>How it works</h3>
 					<p>
-					You can think of the Fraction.less grid like an old fashioned HTML table. It consists of classes defining rows and cells. Each "row" is always the same width with each "cell" varying in size, giving the layout its basic structure. There's more to it than that, though. The Fraction.less grid is easy - just take a look at this sample code which produces the first half of this page.
+					You can think of the Fraction.less grid like an old fashioned HTML table. It consists of classes defining container, rows, and cells. The containers span the entire width of the browser (great for full screen backgrounds) and can contain an infinite number of rows. Rows are centered blocks with a width of 1140px by default. This is where your content will go. Then you've got your columns. You can have up to twelve columns per row. This is where your page content will live.
 					</p>
 					<p>
 					The example HTML code to the right sets up a grid as shown below.<br />
@@ -158,21 +161,21 @@
 					<pre class="htmlCode">
 &lt;header class="container"&gt;
 	&lt;section class="row"&gt;
-    	&lt;article class="one centered"&gt;
+    	&lt;article class="twelve centered-text"&gt;
             &lt;!-- Block of centered content --&gt;
         &lt;/article&gt;
     &lt;/section&gt;
 &lt;/header&gt;
 &lt;section class="container">
     &lt;section class="row"&gt;
-        &lt;article class="one-third"&gt;
-            &lt!-- 1/3 width bucket --&gt;
+        &lt;article class="four"&gt;
+            &lt;!-- 4 column bucket --&gt;
         &lt;/article&gt;
-	    &lt;article class="one-third"&gt;
-		    &lt;!-- Bucket 2, Row 1 --&gt;
+	    &lt;article class="four"&gt;
+		    &lt;!-- 4 column bucket --&gt;
 	    &lt;/article&gt;
-	    &lt;article class="one-third last"&gt;
-		    &lt!-- Bucket 3, Row 1 --&gt;
+	    &lt;article class="four last"&gt;
+		    &lt;!-- 4 column bucket --&gt;
 	    &lt;/article&gt;
     &lt;section&gt;
 &lt;/section&gt;</pre>
@@ -180,7 +183,7 @@
 				<article class="one-quarter last">
 					<h3>Just add it up</h3>
 					<p>
-					The Fraction.less grid works using a few simple, easy to remember classes. If you can add simple fractions (or spare change) then you can have a page layout up in 5 minutes or less! Here's how it works: you create a container element that holds an unlimited number of rows and fill it with elements with class names that add up to 1. Classes in Fraction.less are named after fractions so it's easy! For example: <code>.one-quarter</code> + <code>.one-half</code> + <code>.one-quarter</code> = 1 = <code>.full-width</code> 
+					The Fraction.less grid works using a few simple, easy to remember classes. If you can add simple numbers (or spare change) then you can have a page layout up in 5 minutes or less! Here's how it works: you create a container element that holds an unlimited number of rows and fill it with elements with class names that add up to 12. Classes in Fraction.less are named as numbers so it's easy! For example: <code>.three</code> + <code>.six</code> + <code>.three last</code> = 12 columns = <code>.twelve</code> 
 					</p>
 					<p>
 					The <code>.container</code> class is perfect for blocks of elements needing full-screen backgrounds and <code>.row</code>s are good for, well... creating rows. So be sure to wrap your fractions around a <code>.container</code> and <code>.row</code> (in that order). The last element in each row gets a <code>.last</code> class. That's all there is to it.
