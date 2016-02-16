@@ -26,4 +26,5 @@ todo.txt
 workinggrid.less
 
 # NPM/Grunt/Build system ignores
-node_modules
+node_modules/
+src/vendor/
