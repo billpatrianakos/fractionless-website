@@ -1,0 +1,64 @@
+// Header
+// ======
+// Page header styles
+
+body > header {
+  background: @blue;
+  .box-sizing(border-box);
+
+  nav {
+    padding: 1em 0;
+    padding: 1rem 0;
+
+    a, a:visited {
+      color: #fff;
+
+      &:hover {
+        color: @orange;
+        .transition(all, 0.3s, ease-in-out);
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      float: right;
+
+      li {
+        display: inline-block;
+        float: left;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+// Hero Banner
+.hero {
+  .fs-background('/img/hero-bg.jpg');
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: #fff;
+    .text-shadow(0, 0, 2px, @black);
+  }
+
+  .bounding-box {
+    .rgba(@black, 0.8);
+    width: 70%;
+    margin: auto;
+    margin-top: 2em;
+    margin-top: 2rem;
+    margin-bottom: 2em;
+    margin-bottom: 2rem;
+    padding: 1.75em;
+    padding: 1.75rem;
+    .border-radius(4px);
+  }
+}

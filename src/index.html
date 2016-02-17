@@ -4,35 +4,80 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <title>Fractionless Boilerplate | The simple, flexible, powerful front-end framework</title>
-  <meta name="description" content="Fractionless is an HTML/CSS framework you build on instead of tearing apart. It's simple, flexible, and powerful." />
+  <title>Fractionless Boilerplate | The simple, flexible, powerful front-end starter kit</title>
+  <meta name="description" content="Fractionless is an HTML/CSS framework you build on instead of tearing apart. It's simple, flexible, and powerful for both beginners and advanced developers." />
   <meta name="author" content="Bill Patrianakos" />
   <link rel="author" href="/humans.txt" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- process:css css/style.css -->
-  <link rel="stylesheet" href="vendor/normalize-css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- /process -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700|Source+Code+Pro' />
 
   <!--[if lt IE 9]>
-  <script src="vendor/html5shiv/dist/html5shiv.min.js"></script>
-  <script src="vendor/respond/dest/respond.min.js"></script>
+  <script src="/vendor/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="/vendor/es5-shim/es5-shim.min.js"></script>
+  <script src="/vendor/respond/dest/respond.min.js"></script>
   <![endif]-->
 </head>
 
 <body>
+  <header class="container">
+    <nav class="row">
+      <div class="col-4">
+        <p class="hug h3 light">
+          <a href="/" title="Fractionless HTML Boilerplate">Fraction.less</a>
+        </p>
+      </div>
+      <div class="col-8">
+        <ul>
+          <li><a href="/getting-started/">Getting Started</a></li>
+          <li><a href="/docs/">Documentation</a></li>
+          <li><a href="https://github.com/billpatrianakos/fractionless-boilerplate" target="_blank">Source</a></li>
+          <li><a href="https://github.com/billpatrianakos/fractionless-boilerplate/archive/master.zip">Download</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container hero">
+    <div class="row-loose">
+      <div class="col-12">
+        <h1 class="centered-text h2">Don't waste time fighting your framework.</h1>
+        <h2 class="centered-text h2 light hug">Build out a unique site fast</h2>
+        <div class="bounding-box">
+          <div class="row">
+            <div class="col-9">
+              <p class="hug">
+                <strong>What is it and why use it?</strong>
+                <br />
+                Fraction.less is a HTML/CSS quick-start kit that’ll get your site or app’s font-end built in no time. Unlike other frameworks you won’t spend the first half hour un-setting the defaults. Instead you’ll be presented with a minimal yet comprehensive set of baseline defaults that’ll get you started faster than you thought. With Fraction.less, less really is more.
+              </p>
+            </div>
+            <div class="col-3">
+              <a href="https://github.com/billpatrianakos/fractionless-boilerplate/archive/master.zip" class="btn download">
+                <i class="fa fa-download"></i> Download
+              </a>
+              <a href="https://github.com/billpatrianakos/fractionless-boilerplate" class="btn source">
+                <i class="fa fa-github-alt"></i> View Source
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
   <main class="container">
     <!-- Content can go here -->
   </main>
 
   <!-- process:[src] //ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js -->
-  <script src="vendor/jquery/dist/jquery.min.js"></script>
+  <script src="/vendor/jquery/dist/jquery.min.js"></script>
   <!-- /process -->
   <!-- process:js js/scripts.js -->
-  <script src="js/scripts.js"></script>
+  <script src="/js/scripts.js"></script>
   <!-- /process -->
 
 </body>

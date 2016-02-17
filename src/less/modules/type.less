@@ -15,8 +15,9 @@
 @scale: 1.414;
 
 // Font families
-@sans-serif: 'Helvetica Neue', Helvetica, 'Lucida Grande', Verdana, Arial, sans-serif;
-@serif: Georgia, 'Times New Roman', serif;
+@sans-serif: 'Source Sans Pro', 'Helvetica Neue', Helvetica, 'Lucida Grande', Verdana, Arial, sans-serif;
+@serif: @sans-serif;
+@code: 'Source Code Pro', Consolas, Menlo, monospace;
 
 html {
   font-family: @sans-serif;
@@ -152,6 +153,10 @@ strong {
 
 .lg {
   .font-size(1.2);
+}
+
+small, .sm {
+  font-size: 70%;
 }
 
 .sans-serif { font-family: @sans-serif; } // Useful for making headings sans-serif

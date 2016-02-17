@@ -1,0 +1,51 @@
+// Buttons
+// =======
+// Global button styling
+
+.btn {
+  padding: 1em 2em;
+  padding: 1rem 2rem;
+  display: inline-block;
+  text-align: center;
+  .border-radius(2px);
+
+  &.download {
+    .gradient(top, @yellow, darken(@yellow, 20%));
+    color: @black;
+    .text-shadow(0, -1px, 1px, darken(@yellow, 20%));
+    font-weight: 700;
+    width: 70%;
+    border: 1px solid darken(@yellow, 10%);
+    .transition(all, 1.3s, ease-in-out);
+    font-size: 1.2em;
+    font-size: 1.2rem;
+
+    &:hover,
+    &:visited {
+      .gradient(bottom, @yellow, darken(@yellow, 20%));
+      .text-shadow(0, 1px, 1px, darken(@yellow, 20%));
+      .transition(all, 1.3s, ease-in-out);
+    }
+  }
+
+  &.source {
+    .gradient(top, @red, darken(@red, 20%));
+    color: #fff;
+    .text-shadow(0, -1px, 1px, darken(@red, 20%));
+    font-weight: 700;
+    width: 70%;
+    border: 1px solid darken(@red, 20%);
+    margin-top: 1em;
+    margin-top: 1rem;
+    .transition(all, 1.3s, ease-in-out);
+    font-size: 1.2em;
+    font-size: 1.2rem;
+
+    &:hover,
+    &:visited {
+      .gradient(bottom, @red, darken(@red, 20%));
+      .text-shadow(0, 1px, 1px, darken(@red, 20%));
+      .transition(all, 1.3s, ease-in-out);
+    }
+  }
+}

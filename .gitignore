@@ -28,3 +28,4 @@ workinggrid.less
 # NPM/Grunt/Build system ignores
 node_modules/
 src/vendor/
+dist/
