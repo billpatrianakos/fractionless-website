@@ -4,6 +4,7 @@
 
 body > header {
   background: @blue;
+  border-top: 3px solid @ltblue;
   .box-sizing(border-box);
 
   nav {
@@ -49,9 +50,13 @@ body > header {
     .text-shadow(0, 0, 2px, @black);
   }
 
+  h1 {
+    font-size: 3.9rem;
+  }
+
   .bounding-box {
     .rgba(@black, 0.8);
-    width: 70%;
+    //width: 70%;
     margin: auto;
     margin-top: 2em;
     margin-top: 2rem;
@@ -61,4 +66,8 @@ body > header {
     padding: 1.75rem;
     .border-radius(4px);
   }
+}
+
+body > .gray {
+  background: @gray;
 }

@@ -1,0 +1,31 @@
+// Lists
+// =====
+// List styling
+
+.inline-list {
+  list-style: none;
+
+  li {
+    display: inline-block;
+    float: left;
+  }
+}
+
+.user-list {
+  margin: 1em auto;
+  width: auto;
+  display: inline-block;
+
+  li {
+    margin-right: 1.5em;
+    margin-right: 1.5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      border: 2px solid @gray;
+    }
+  }
+}
