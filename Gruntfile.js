@@ -25,7 +25,8 @@ module.exports = function(grunt) {
         options: {
           host: 'localhost',
           port: '9000',
-          base: '<%= project.dev %>/'
+          base: '<%= project.dev %>/',
+          livereload: true
         }
       }
     },
