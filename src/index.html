@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="/css/style.css" />
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700|Source+Code+Pro' />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/github.min.css" />
 
   <!--[if lt IE 9]>
   <script src="/vendor/html5shiv/dist/html5shiv.min.js"></script>
@@ -31,7 +32,6 @@
       </div>
       <div class="col-8">
         <ul>
-          <li><a href="/getting-started/">Getting Started</a></li>
           <li><a href="/docs/">Documentation</a></li>
           <li><a href="https://github.com/billpatrianakos/fractionless-boilerplate" target="_blank">Source</a></li>
           <li><a href="https://github.com/billpatrianakos/fractionless-boilerplate/archive/master.zip">Download</a></li>
@@ -43,15 +43,15 @@
   <div class="container hero">
     <div class="row-loose">
       <div class="col-12">
-        <h1 class="centered-text h2">Don't waste time fighting your framework.</h1>
-        <h2 class="centered-text h2 light hug">Build out a unique site fast</h2>
+        <h1 class="centered-text">Don't waste time fighting your framework.</h1>
+        <h2 class="centered-text light hug">Build out a unique site fast</h2>
         <div class="bounding-box">
           <div class="row">
             <div class="col-9">
-              <p class="hug">
+              <p class="hug lg">
                 <strong>What is it and why use it?</strong>
                 <br />
-                Fraction.less is a HTML/CSS quick-start kit that’ll get your site or app’s font-end built in no time. Unlike other frameworks you won’t spend the first half hour un-setting the defaults. Instead you’ll be presented with a minimal yet comprehensive set of baseline defaults that’ll get you started faster than you thought. With Fraction.less, less really is more.
+                Fraction.less is a HTML/CSS quick-start kit that'll get your site or app's front-end built in no time. Unlike other frameworks you won't spend the first half hour un-setting the defaults. Instead you'll be presented with a minimal yet comprehensive set of baseline defaults that'll get you started faster than you thought. With Fraction.less, less really is more.
               </p>
             </div>
             <div class="col-3">
@@ -67,16 +67,133 @@
       </div>
     </div>
   </div>
+
+  <div class="container gray">
+    <div class="row-loose">
+      <div class="col-4">
+        <h3><i class="fa fa-code"></i>&nbsp; HTML5 Ready</h3>
+        <p>
+          Fraction.less comes with boilerplate code that encourages you take advantage of HTML5, CSS3, and responsive web design today - even in older browsers.
+        </p>
+      </div>
+      <div class="col-4">
+        <h3><i class="fa fa-wrench"></i>&nbsp; True Customization</h3>
+        <p>
+          Unlike some other frameworks we know of Fraction.less gives you a very simple yet powerful set of defaults that you can truly build on, not fight against.
+        </p>
+      </div>
+      <div class="col-4">
+        <h3><i class="fa fa-heart-o"></i>&nbsp; Just Enough Goodies</h3>
+        <p>
+          You won't get floating navs or other UI elements in this framework but you will find the scaffolding to build out any front-end.
+        </p>
+      </div>
+    </div>
+  </div>
   
 
   <main class="container">
-    <!-- Content can go here -->
+    <div class="row-loose">
+      <div class="col-6">
+        <h2 class="h3">Quick Start</h2>
+        <pre><code>&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-4"&gt;
+      &lt;!-- 4 Column Bucket--&gt;
+    &lt;/div&gt;
+    &lt;div class="col-4"&gt;
+      &lt;!-- 4 Column Bucket--&gt;
+    &lt;/div&gt;
+    &lt;div class="col-4"&gt;
+      &lt;!-- 4 Column Bucket--&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      <div class="col-6 hp-steps">
+        <div class="callout-block">
+          <p class="hug">
+            <strong class="lg">Step1. Create a container</strong>
+            <br />
+            Your markup needs at least one container to hold the rows that'll hold your columns.
+          </p>
+        </div>
+
+        <div class="callout-block">
+          <p class="hug">
+            <strong class="lg">Step2. Create a row</strong>
+            <br />
+            Inside your container you can put as many .row's as you'd like. Rows hold up to a maximum of 12 columns.
+          </p>
+        </div>
+
+        <div class="callout-block">
+          <p class="hug">
+            <strong class="lg">Step3. Create your columns</strong>
+            <br />
+            Using the grid classes, create any number of column elements whose class names add up to twelve.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row-loose">
+      <div class="col-12 centered-text">
+        <h2>Who's Using It?</h2>
+        <p class="hug">
+          Fraction.less isn't the most popular front-end starter kit out there but<br /> it's being used on a fair number of websites
+        </p>
+        <ul class="inline-list user-list">
+          <li>
+            <a href="https://writeapp.me" target="_blank"><img src="/img/users/writeapp_scrn.jpg" alt="Write.app" width="210" /></a>
+          </li>
+          <li>
+            <a href="http://billpatrianakos.me" target="_blank"><img src="/img/users/bp_scrn.jpg" alt="Bill Patrinakos" width="210" /></a>
+          </li>
+          <li>
+            <a href="https://cleverwebdesign.net" target="_blank"><img src="/img/users/clever_scrn.jpg" alt="Clever Web Design" width="210" /></a>
+          </li>
+          <li>
+            <a href="http://moonweather.me" target="_blank"><img src="/img/users/moonweather_scrn.jpg" alt="MoonWeather" width="210" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
+
+  <footer class="container">
+    <div class="row-loose">
+      <div class="col-6">
+        <p>
+          <small>Copyright &copy; 2011 - <span id="year">2001</span> <a href="http://billpatrianakos.me" target="_blank">Bill Patrianakos</a></small>
+        </p>
+      </div>
+      <div class="col-6 right-align">
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1634925156741784";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+
+        &nbsp;&nbsp; 
+        
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Fraction.less Boilerplate is the best front-end framework you've ever seen">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      </div>
+    </div>
+  </footer>
 
   <!-- process:[src] //ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js -->
   <script src="/vendor/jquery/dist/jquery.min.js"></script>
   <!-- /process -->
   <!-- process:js js/scripts.js -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
   <script src="/js/scripts.js"></script>
   <!-- /process -->
 
