@@ -24,7 +24,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           host: 'localhost',
-          port: '9000',
+          port: process.env.PORT || '9000',
           base: '<%= project.dev %>/',
           livereload: true
         }
@@ -74,6 +74,41 @@ module.exports = function(grunt) {
         cwd: '<%= project.dev %>/vendor/font-awesome/fonts/',
         src: ['*.{otf,ttf,svg,eot,woff,woff2}'],
         dest: '<%= project.dev %>/fonts/'
+      }
+    },
+
+    // markdown
+    markdown: {
+      dev: {
+        options: {
+          templateContext: {},
+          contextBinder: true,
+          contextBinderMark: '@@@',
+          template: 'templates/docs.html',
+          preCompile: function(src, context) {
+            var fs    = require('fs'),
+                files = fs.readdirSync(__dirname + '/src/docs');
+
+            context.toc = '<ul class="docs-toc">';
+
+            files.forEach(function(file) {
+              var fileName = file === 'index.html' ? ['Getting Started'] : file.replace('.html', '').split('-');
+              fileName = fileName.map(function(name) {
+                return name.charAt(0).toUpperCase() + name.substr(1);
+              }).join(' ');
+              context.toc += '<li><a href="/docs/' + file + '">' + fileName + '</a></li>';
+            });
+
+            context.toc += '</ul>';
+          }
+        },
+        files: [{
+          expand: true,
+          cwd: 'content',
+          src: '*.md',
+          dest: '<%= project.dev %>/docs/',
+          ext: '.html'
+        }]
       }
     }
   });
