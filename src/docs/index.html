@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Getting Started | Fractionless Boilerplate</title>
+  <meta name="description" content="Learn how to install and set up Fraction.less Boilerplate for use in your own projects" />
+  <meta name="author" content="Bill Patrianakos" />
+  <link rel="author" href="/humans.txt" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700|Source+Code+Pro' />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/github.min.css" />
+
+  <!--[if lt IE 9]>
+  <script src="/vendor/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="/vendor/es5-shim/es5-shim.min.js"></script>
+  <script src="/vendor/respond/dest/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <header class="container">
+    <nav class="row">
+      <div class="col-4">
+        <p class="hug h3 light">
+          <a href="/" title="Fractionless HTML Boilerplate">Fraction.less</a>
+        </p>
+      </div>
+      <div class="col-8">
+        <ul>
+          <li><a href="/docs/">Documentation</a></li>
+          <li><a href="https://github.com/billpatrianakos/fractionless-boilerplate" target="_blank">Source</a></li>
+          <li><a href="https://github.com/billpatrianakos/fractionless-boilerplate/archive/master.zip">Download</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="row-loose">
+      <article class="col-6 push-3">
+        <!-- @@@title:Getting Started@@@ -->
+<!-- @@@description:Learn how to install and set up Fraction.less Boilerplate for use in your own projects@@@ -->
+<h1 id="getting-started">Getting Started</h1>
+<p>Fraction.less can be used in a ton of different ways easily:</p>
+<ol>
+<li>As a framework for building out static sites</li>
+<li>As the base for your web framework&#39;s view files and assets</li>
+<li>You can use just the stylesheets, tear them up, then just use the grid or typography styles, or all of them</li>
+<li>As the starting point for your own more fully-featured, better-than-Bootstrap front-end framework (Hint: it&#39;s already better than Bootstrap)</li>
+</ol>
+<p>No matter how you use it, getting started is easy. Just download or clone the repository, unzip, and start building:</p>
+<ol>
+<li><a href="https://github.com/billpatrianakos/Fractionless-Boilerplate/archive/master.zip">Download the project</a> or clone into a new folder with <code>git clone https://github.com/billpatrianakos/Fractionless-Boilerplate.git my_site &amp;&amp; cd $_</code></li>
+<li>You&#39;ll need Grunt and Bower to use the included build tasks and resources. Install with <code>npm install -g bower grunt-cli</code></li>
+<li>To use the build tasks install the required packages from npm with <code>npm install &amp;&amp; bower install</code></li>
+<li>Start up a local server by running <code>grunt develop</code> (or just <code>grunt</code> for those who like brevity)</li>
+</ol>
+
+      </article>
+      <aside class="col-3 pull-6">
+        <h3 class="h4">Table of Contents</h3>
+        <ul class="docs-toc"><li><a href="/docs/grunt-tasks.html">Grunt Tasks</a></li><li><a href="/docs/index.html">Getting Started</a></li><li><a href="/docs/project-structure.html">Project Structure</a></li></ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="container">
+    <div class="row-loose">
+      <div class="col-6">
+        <p>
+          <small>Copyright &copy; 2011 - <span id="year">2016</span> <a href="http://billpatrianakos.me" target="_blank">Bill Patrianakos</a></small>
+        </p>
+      </div>
+      <div class="col-6 right-align">
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1634925156741784";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+
+        &nbsp;&nbsp; 
+
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Fraction.less Boilerplate is the best front-end framework you've ever seen">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </div>
+    </div>
+  </footer>
+
+  <!-- process:[src] //ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js -->
+  <script src="/vendor/jquery/dist/jquery.min.js"></script>
+  <!-- /process -->
+  <!-- process:js js/scripts.js -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script src="/js/scripts.js"></script>
+  <!-- /process -->
+
+</body>
+</html>
