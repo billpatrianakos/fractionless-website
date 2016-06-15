@@ -2,6 +2,12 @@
 // =====
 // List styling
 
+ul {
+  li {
+    margin-bottom: 1em;
+  }
+}
+
 .inline-list {
   list-style: none;
 
@@ -26,6 +32,40 @@
 
     img {
       border: 2px solid @gray;
+    }
+  }
+}
+
+
+.checkmark-list li {
+  list-style: none;
+
+  &:before {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    position: relative;
+    margin: 0 5px 0 -30px;
+    color: @green;
+    font-size: 1.5rem;
+  }
+}
+
+.docs-toc {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;
+  margin-top: 1rem;
+
+  li {
+    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 1.1em;
+    font-size: 1.1rem;
+
+    a {
+      color: @blue;
     }
   }
 }

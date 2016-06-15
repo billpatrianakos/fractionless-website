@@ -2602,6 +2602,12 @@ th {
   order: 12;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
+.push-12 {
+  left: 101.618%;
+}
+.pull-12 {
+  right: 101.618%;
+}
 .row > .col-11,
 .block-11,
 .row-loose > .col-11,
@@ -2629,6 +2635,12 @@ th {
   /* NEW - Chrome */
   order: 11;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.push-11 {
+  left: 93.14983333%;
+}
+.pull-11 {
+  right: 93.14983333%;
 }
 .row > .col-10,
 .block-10,
@@ -2658,6 +2670,12 @@ th {
   order: 10;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
+.push-10 {
+  left: 84.68166667%;
+}
+.pull-10 {
+  right: 84.68166667%;
+}
 .row > .col-9,
 .block-9,
 .row-loose > .col-9,
@@ -2685,6 +2703,12 @@ th {
   /* NEW - Chrome */
   order: 9;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.push-9 {
+  left: 76.2135%;
+}
+.pull-9 {
+  right: 76.2135%;
 }
 .row > .col-8,
 .block-8,
@@ -2714,6 +2738,12 @@ th {
   order: 8;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
+.push-8 {
+  left: 67.74533333%;
+}
+.pull-8 {
+  right: 67.74533333%;
+}
 .row > .col-7,
 .block-7,
 .row-loose > .col-7,
@@ -2741,6 +2771,12 @@ th {
   /* NEW - Chrome */
   order: 7;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.push-7 {
+  left: 59.27716667%;
+}
+.pull-7 {
+  right: 59.27716667%;
 }
 .row > .col-6,
 .block-6,
@@ -2770,6 +2806,12 @@ th {
   order: 6;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
+.push-6 {
+  left: 50.809%;
+}
+.pull-6 {
+  right: 50.809%;
+}
 .row > .col-5,
 .block-5,
 .row-loose > .col-5,
@@ -2797,6 +2839,12 @@ th {
   /* NEW - Chrome */
   order: 5;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.push-5 {
+  left: 42.34083333%;
+}
+.pull-5 {
+  right: 42.34083333%;
 }
 .row > .col-4,
 .block-4,
@@ -2826,6 +2874,12 @@ th {
   order: 4;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
+.push-4 {
+  left: 33.87266667%;
+}
+.pull-4 {
+  right: 33.87266667%;
+}
 .row > .col-3,
 .block-3,
 .row-loose > .col-3,
@@ -2853,6 +2907,12 @@ th {
   /* NEW - Chrome */
   order: 3;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.push-3 {
+  left: 25.4045%;
+}
+.pull-3 {
+  right: 25.4045%;
 }
 .row > .col-2,
 .block-2,
@@ -2882,6 +2942,12 @@ th {
   order: 2;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
+.push-2 {
+  left: 16.93633333%;
+}
+.pull-2 {
+  right: 16.93633333%;
+}
 .row > .col-1,
 .block-1,
 .row-loose > .col-1,
@@ -2909,6 +2975,12 @@ th {
   /* NEW - Chrome */
   order: 1;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.push-1 {
+  left: 8.46816667%;
+}
+.pull-1 {
+  right: 8.46816667%;
 }
 img,
 object,
@@ -3126,7 +3198,7 @@ a:hover {
   text-shadow: 0 -1px 1px #f4f403;
   font-weight: 700;
   width: 70%;
-  border: 1px solid #fcfc2e;
+  border: 1px solid #f4f403;
   -webkit-transition: all 1.3s ease-in-out;
   -moz-transition: all 1.3s ease-in-out;
   -o-transition: all 1.3s ease-in-out;
@@ -3238,6 +3310,9 @@ pre code {
   margin-bottom: 1em;
   margin-bottom: 1rem;
 }
+ul li {
+  margin-bottom: 1em;
+}
 .inline-list {
   list-style: none;
 }
@@ -3259,6 +3334,34 @@ pre code {
 }
 .user-list li img {
   border: 2px solid #e5e5e5;
+}
+.checkmark-list li {
+  list-style: none;
+}
+.checkmark-list li:before {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  position: relative;
+  margin: 0 5px 0 -30px;
+  color: #86B674;
+  font-size: 1.5rem;
+}
+.docs-toc {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;
+  margin-top: 1rem;
+}
+.docs-toc li {
+  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: 1.1em;
+  font-size: 1.1rem;
+}
+.docs-toc li a {
+  color: #0a457d;
 }
 body > header {
   background: #0a457d;
@@ -3294,7 +3397,9 @@ body > header nav ul {
 body > header nav ul li {
   display: inline-block;
   float: left;
+  margin-right: 1em;
   margin-right: 1rem;
+  margin-bottom: 0;
 }
 .hero {
   background: url('/img/hero-bg.jpg') no-repeat center center fixed;
@@ -3325,10 +3430,10 @@ body > header nav ul li {
   background: #272727;
   background: rgba(39, 39, 39, 0.8);
   margin: auto;
-  margin-top: 2em;
-  margin-top: 2rem;
-  margin-bottom: 2em;
-  margin-bottom: 2rem;
+  margin-top: 3em;
+  margin-top: 3rem;
+  margin-bottom: 3em;
+  margin-bottom: 3rem;
   padding: 1.75em;
   padding: 1.75rem;
   -moz-border-radius: 4px;
