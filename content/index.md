@@ -1,6 +1,6 @@
 <!-- @@@title:Getting Started@@@ -->
 <!-- @@@description:Learn how to install and set up Fraction.less Boilerplate for use in your own projects@@@ -->
-# Getting Started
+# 1. Getting Started
 
 Fraction.less can be used in a ton of different ways easily:
 

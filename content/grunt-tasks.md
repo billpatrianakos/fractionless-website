@@ -1,6 +1,6 @@
 <!-- @@@title:Grunt Tasks@@@ -->
 <!-- @@@description:How to use the included Grunt tasks to run a local server and compile scripts@@@ -->
-# Using Development Tasks
+# 2. Using Development Tasks
 
 Fraction.less comes with a few simple Grunt plugins and tasks set up for you. You aren't familiar with Grunt it's a task runner that lets you run common chores automatically. You can [read more about Grunt here](http://gruntjs.com). If you choose to use the included Grunt tasks you'll have access to:
 
